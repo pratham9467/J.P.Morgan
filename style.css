@@ -1,13 +1,201 @@
-*{
-margin: 0px;
-padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-height: 100%;
-width: 100%;
-background-color:white ;
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  font-family: oswald, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: medium;
 }
 .main {
-overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: serif;
+  letter-spacing: 0.1ch;
+  margin-left: 2.5rem;
+  border-top: 0.4rem solid black;
+  color: #503629;
+}
+
+.navbar-nav a {
+  margin-left: 0.9em;
+  padding-top: 1.2em;
+  font-size: 0.87rem;
+  font-weight: 900;
+  color: black;
+  letter-spacing: 0.5mm;
+}
+.nav-item .nav-link {
+  position: relative;
+}
+
+.element img {
+  margin-left: 17vw;
+}
+.element a {
+  display: inline-block;
+  margin-left: 0.1vw;
+}
+
+img .hero-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-section .btn {
+  margin-top: 2vh;
+  background-color: #1a7b99;
+  width: 17vw;
+  height: 7vh;
+  padding: 1px;
+  border-radius: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: white;
+  font-family: oswald;
+  letter-spacing: 0.5mm;
+}
+
+img .hero-section2 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero-section2 h6 {
+  letter-spacing: 0.3mm;
+  font-size: large;
+}
+.hero-section2 h6 span {
+  color: brown;
+}
+.hero-section2 h5 {
+  letter-spacing: 0.3mm;
+}
+.hero-section2 .btn {
+  margin-top: 2vh;
+  background-color: #1a7b99;
+  width: 27vw;
+  height: 6vh;
+  padding: 1px;
+  border-radius: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  color: white;
+  font-family: oswald;
+  letter-spacing: 0.5mm;
+}
+
+.background {
+    margin-top: -6%;
+    margin-bottom: 0%;
+    z-index: 10;
+  background-image: url(./assets/c-dustin-91AQt9p4Mo8-unsplash.jpg);
+  height: 70%;
+
+  width: auto;
+  object-fit: cover;
+}
+
+.hero-section3 {
+  margin-top: -2rem;
+  padding: 0 2rem;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 223, 188);
+}
+
+.strip {
+  gap: 3vw;
+  position: relative;
+  left: 8%;
+  margin-top: -7.2vh;
+  height: 11vh;
+  width: 87vw;
+  color: white;
+  background-color: black;
+}
+.strip a {
+  text-decoration: none !important ;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  font-size: small;
+  padding: 0.5rem;
+  letter-spacing: 0.5mm;
+}
+.strip #strip1 {
+  margin-left: 30vw;
+}
+.strip img {
+  background-color: white;
+
+  border: none;
+}
+@media screen and (max-width: 990px) {
+  .element img {
+    display: none;
+  }
+  .element a {
+    margin-left: 1.5vw;
+  }
+
+  img .hero-section {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hero-section .btn {
+    margin-top: 2vh;
+    background-color: #1a7b99;
+    width: 50vw;
+    height: 6vh;
+    border-radius: 0;
+
+    text-align: center;
+
+    font-size: 0.8rem;
+    color: white;
+    font-family: oswald;
+    letter-spacing: 0.5mm;
+    display: inline-block;
+  }
+  .strip a {
+    text-decoration: none !important ;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: small;
+  }
+  .strip #strip1 {
+    margin-left: 0vw;
+  }
+  .background {
+    margin-top: 6%;
+    margin-bottom: 0%;
+    z-index: 10;
+  background-image: url(./assets/c-dustin-91AQt9p4Mo8-unsplash.jpg);
+  height: 70%;
+
+  width: auto;
+  object-fit: cover;
+}
 }
